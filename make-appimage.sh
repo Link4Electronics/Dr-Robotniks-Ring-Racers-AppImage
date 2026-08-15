@@ -19,5 +19,6 @@ quick-sharun /usr/bin/ringracers
 # Turn AppDir into AppImage
 quick-sharun --make-appimage
 
-# test the final app
+# Test the app for 12 seconds, if the test fails due to the app
+# having issues running in the CI use --simple-test instead
 quick-sharun --simple-test ./dist/*.AppImage
